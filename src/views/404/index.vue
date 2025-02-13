@@ -1,3 +1,5 @@
 <script lang="ts" setup></script>
-<template></template>
+<template>
+  <p>404</p>
+</template>
 <style lang="scss" scoped></style>

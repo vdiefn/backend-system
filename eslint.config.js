@@ -1,18 +1,18 @@
 //導入了 `globals`全域變數的函式庫模組，該模組提供了一組預先定義的全域變數（如 window、document 等），這些變數通常在不同的環境（如瀏覽器、Node.js）中可用。在 ESLint 配置中，你可以使用這個模組來指定程式碼所執行的環境，從而定義全域變數。
-import globals from "globals";
+import globals from "globals"
 
 //針對 JavaScript 的 ESLint 配置和規則。保持 JavaScript 程式碼的一致性和品質
-import pluginJs from "@eslint/js";
+import pluginJs from "@eslint/js"
 
 //匯入 `typescript-eslint` 插件（ `typescript-eslint/parser` 和 `typescript-eslint/eslint-plugin`）。提供了對 TypeScript 的支持，包括 TS 的解析器和建議的規則集，用於在 TypeScript 檔案中進行 lint 檢查。
-import tseslint from "typescript-eslint";
+import tseslint from "typescript-eslint"
 
 //導入 `eslint-plugin-vue` 插件，提供了 Vue.js 特有 ESLint 規則。確保 Vue 檔案（`.vue` 檔案）中的程式碼符合 Vue.js 的最佳實務和程式碼風格指南
-import pluginVue from "eslint-plugin-vue";
-import prettier from "eslint-plugin-prettier";
-import skipFormatting from "@vue/eslint-config-prettier/skip-formatting";
-import vueEslintParser from "vue-eslint-parser";
-import tseslint from "typescript-eslint";
+import pluginVue from "eslint-plugin-vue"
+import prettier from "eslint-plugin-prettier"
+import skipFormatting from "@vue/eslint-config-prettier/skip-formatting"
+import vueEslintParser from "vue-eslint-parser"
+import tseslint from "typescript-eslint"
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -64,7 +64,7 @@ export default [
     languageOptions: {
       parser: tseslint,
       parserOptions: {
-        ecmaVersion: "latest"
+        ecmaVersion: "latest",
       },
     },
   },
@@ -106,4 +106,4 @@ export default [
       "prettier/prettier": "warn", // 默認為error
     },
   },
-];
+]
