@@ -1,6 +1,5 @@
-module.exports = {
+export default {
   extends: ["@commitlint/config-conventional"],
-  // 規則
   rules: {
     "type-enum": [
       2,

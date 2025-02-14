@@ -4,6 +4,7 @@ import "element-plus/dist/index.css"
 import zhTw from "element-plus/es/locale/lang/zh-tw"
 import App from "./App.vue"
 import router from "./router"
+import "./styles/index.scss"
 
 const app = createApp(App)
 
